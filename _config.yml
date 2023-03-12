@@ -91,7 +91,8 @@ service-worker: true
 
 # 友情链接，请尽量不要删除，谢谢！
 friends: [
-   {
+      {
+    },{
         title: "bilibili：小曉伍",
         href: "https://space.bilibili.com/362536491"
     },{
