@@ -1,0 +1,13 @@
+GEM
+  specs:
+    jekyll-paginate (1.1.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  jekyll-paginate
+  wdm (>= 0.1.0)
+
+BUNDLED WITH
+   2.5.23
