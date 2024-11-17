@@ -2,11 +2,12 @@
 title: Wendell's bolg
 SEOTitle: Wendell
 header-img: img/post-bg-desk.png
+email: 
 description: "Wendell"
 keyword: "bolg, 博客, xiaowu, wendell"
-url: "https://XiaoWendell.github.io"          # your host, for absolute URL
+url: "https://XiaoWendell.github.io/OldBlod"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/XiaoWendell/XiaoWendell.github.io.git" # you code repository
+github_repo: "https://github.com/XiaoWendell/OldBlod.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -17,12 +18,12 @@ sidebar-avatar: /img/about-HJ.jpg      # use absolute URL, seeing it's used in b
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-# zhihu_username:     qiubaiying
-# github_username：   XiaoWendell.github.io
-# facebook_username:  baiying.qiu.7
-# jianshu_username:   e71990ada2fd
-# twitter_username:   qiubaiying
+# weibo_username:     
+# zhihu_username:     
+# github_username：   
+# facebook_username:  
+# jianshu_username:   
+# twitter_username:   
 
 
 
@@ -58,16 +59,17 @@ kramdown:
 # Disqus（https://disqus.com/）
 # disqus_username: qiubaiying
 
-# Gitalk
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 90229d28f1f6053fdc23 #生成的客户端ID
-  clientSecret: 1804f654e2b356429447eb2e7d567c58478516c9  #生成的clientSecret
-  repo: XiaoWendell.github.io    #仓库名称
-  owner: XiaoWendell    #github用户名
-  admin: XiaoWendell
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
+
+# Gitalk
+# gitalk:
+#   enable: true    #是否开启Gitalk评论
+#   clientID: 90229d28f1f6053fdc23 #生成的客户端ID
+#   clientSecret: 1804f654e2b356429447eb2e7d567c58478516c9  #生成的clientSecret
+#   repo: XiaoWendell.github.io    #仓库名称
+#   owner: XiaoWendell    #github用户名
+#   admin: XiaoWendell
+#   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # 统计
 
@@ -98,11 +100,12 @@ service-worker: true
 # 友情链接，请尽量不要删除，谢谢！
 friends: [
       {
+        title: "QQ:666666",
     },{
-        title: "bilibili：小曉伍",
-        href: "https://space.bilibili.com/362536491"
+        title: "bilibili",
+        href: "https://space.bilibili.com"
     },{
-        title: "知乎：晓风",
-        href: "https://www.zhihu.com/people/xiao-feng-75-38-5"
+        title: "知乎,
+        href: "https://www.zhihu.com"
       }
 ]
