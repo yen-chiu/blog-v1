@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+
+# source "https://rubygems.org"
+source "https://gems.ruby-china.com/"     # 使用国内镜像
 
 gem 'jekyll', '~> 4.3'
 gem 'jekyll-paginate' # 如果你需要分页功能
