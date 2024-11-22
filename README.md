@@ -5,8 +5,9 @@
 ![dino](https://raw.githubusercontent.com/XiaoWendell/ProjectAssets/master/images/GIF/dino.gif 'dino')
 
 我是 Wendell，一名业余编程爱好者，此[Blog](https://XiaoWendell.github.io/OldBlog/)已经弃用，这是我现在的[个人平台](https://XiaoWendell.github.io/)。
+''' 一代Blog见[这里](https://github.com/XiaoWendell/OldBlog/releases/tag/v1.0.1)'''
 
-本项目示范网站地址为：https://klovien.github.io 。
+本项目示范网站地址为：[https://klovien.github.io](https://klovien.github.io) 
 
 ## License
 
