@@ -1,30 +1,37 @@
 module.exports = function(grunt) {
 
+    // 站点静态资源仍沿用 Hux 主题时期的 hux-blog.* 命名，与 package.json 里的
+    // 包名（blog-v1）无关，因此单独声明，不再通过 <%= pkg.name %> 拼路径。
+    var assets = 'hux-blog';
+    var CleanCSS = require('less-plugin-clean-css');
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        assets: assets,
         uglify: {
             main: {
-                src: 'js/<%= pkg.name %>.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                files: {
+                    'js/<%= assets %>.min.js': ['js/<%= assets %>.js']
+                }
             }
         },
         less: {
             expanded: {
-                options: {
-                    paths: ["css"]
-                },
                 files: {
-                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
+                    'css/<%= assets %>.css': 'less/<%= assets %>.less'
                 }
             },
             minified: {
                 options: {
-                    paths: ["css"],
-                    cleancss: true
+                    // grunt-contrib-less 3.x 起不再支持 cleancss 选项，
+                    // 压缩改由 less 插件在编译阶段完成。
+                    plugins: [
+                        new CleanCSS({ advanced: true })
+                    ]
                 },
                 files: {
-                    "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                    'css/<%= assets %>.min.css': 'less/<%= assets %>.less'
                 }
             }
         },
@@ -39,26 +46,26 @@ module.exports = function(grunt) {
                     banner: '<%= banner %>'
                 },
                 files: {
-                    src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
+                    src: ['css/<%= assets %>.css', 'css/<%= assets %>.min.css', 'js/<%= assets %>.min.js']
                 }
             }
         },
         watch: {
             scripts: {
-                files: ['js/<%= pkg.name %>.js'],
+                files: ['js/<%= assets %>.js'],
                 tasks: ['uglify'],
                 options: {
-                    spawn: false,
-                },
+                    spawn: false
+                }
             },
             less: {
                 files: ['less/*.less'],
                 tasks: ['less'],
                 options: {
-                    spawn: false,
+                    spawn: false
                 }
-            },
-        },
+            }
+        }
     });
 
     // Load the plugins.
