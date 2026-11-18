@@ -3,6 +3,8 @@
 基于 Jekyll 的个人静态博客（v1 版）存档，本站主题派生自 [Hux Blog](https://github.com/Huxpro/huxpro.github.io)，使用 MIT 许可证。
 
 > 本仓库为旧版博客存档，内容不再更新；新版站点见 [yenchiu.com](https://yenchiu.com/)。
+>
+> 老站线上地址：<https://yenchiu.com/blog-v1/>（推送到 `master` 后由 GitHub Actions 自动构建并部署到 GitHub Pages）。
 
 ## 目录结构
 

@@ -5,7 +5,7 @@ header-img: img/post-bg-desk.png
 email:
 description: 'Wendell'
 keyword: 'blog, 博客, wendell, 三体语'
-url: 'https://yen-chiu.github.io/blog-v1' # your host, for absolute URL
+url: 'https://yenchiu.com' # your host, for absolute URL（站点实际由自定义域名 yenchiu.com/blog-v1/ 提供；baseurl 由 Pages 部署时注入）
 baseurl: '' # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: 'https://github.com/yen-chiu/blog-v1.git' # you code repository
 
