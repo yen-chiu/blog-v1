@@ -54,3 +54,7 @@ tags:
 ## License
 
 遵循 MIT 许可证，详见 [LICENSE](https://github.com/yen-chiu/blog-v1/blob/master/LICENSE)。
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yen-chiu/blog-v1&type=Date)](https://star-history.com/#yen-chiu/blog-v1&Date)
