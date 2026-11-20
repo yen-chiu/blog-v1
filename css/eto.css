@@ -1138,3 +1138,89 @@ body {
     margin: 1.4em 0;
     color: #cfc9ba;
 }
+
+/* ===== 简历页 ===== */
+.resume {
+    margin: 34px 0 40px;
+    padding: 26px 26px 22px;
+    border: 1px solid var(--eto-line);
+    background: linear-gradient(180deg, rgba(12,18,25,.92), rgba(6,9,13,.92));
+}
+
+.resume-note {
+    font-family: var(--eto-mono);
+    font-size: 12px;
+    letter-spacing: .08em;
+    color: var(--eto-amber);
+    border-bottom: 1px dashed var(--eto-line);
+    padding-bottom: 12px;
+    margin: 0 0 6px;
+}
+
+.resume h3 {
+    font-family: var(--eto-serif);
+    font-size: 15px;
+    letter-spacing: .18em;
+    color: var(--eto-red);
+    margin: 26px 0 10px;
+}
+
+.resume h3::before {
+    content: "# ";
+    opacity: .7;
+}
+
+.resume-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-list > li {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+    gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px dotted rgba(27, 39, 51, .8);
+    font-size: 14.5px;
+    line-height: 1.75;
+}
+
+.resume-list > li > span:first-child {
+    color: var(--eto-olive);
+    font-family: var(--eto-mono);
+    font-size: 12.5px;
+    letter-spacing: .04em;
+}
+
+.resume-list > li b {
+    color: #e9e4d7;
+    font-weight: 500;
+}
+
+.resume-list > li p {
+    margin: 4px 0 0;
+    color: #a9a496;
+    font-size: 14px;
+}
+
+.resume-block > li {
+    grid-template-columns: 84px minmax(0, 1fr);
+}
+
+.resume-foot {
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--eto-line);
+    color: #b3ad9e;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .resume { padding: 18px 16px; }
+    .resume-list > li,
+    .resume-block > li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+}
