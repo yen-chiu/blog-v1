@@ -1095,3 +1095,46 @@ body {
 .stories .story p:last-child {
     margin-bottom: 0;
 }
+
+/* ===== 中篇排版 ===== */
+.novella {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.novella .story-meta {
+    font-family: var(--eto-mono);
+    color: var(--eto-amber);
+    letter-spacing: .16em;
+    font-size: 12px;
+    margin: 28px 0 6px;
+}
+
+.novella h2 {
+    font-family: var(--eto-serif);
+    font-size: 23px;
+    letter-spacing: .08em;
+    margin: 2.3em 0 .7em;
+    padding: 0;
+    border: 0;
+    color: #e9e4d7;
+}
+
+.novella h2::before {
+    content: "· ";
+    color: var(--eto-red);
+}
+
+.novella p {
+    font-size: 16px;
+    line-height: 1.95;
+    margin: 0 0 1.05em;
+}
+
+.novella blockquote {
+    border-left: 2px solid var(--eto-red);
+    background: rgba(209, 75, 63, .05);
+    padding: 10px 16px;
+    margin: 1.4em 0;
+    color: #cfc9ba;
+}
