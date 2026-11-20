@@ -12,7 +12,7 @@ github_repo: 'https://github.com/yen-chiu/blog-v1.git' # you code repository
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: '红岸之后，观测继续。'
-sidebar-avatar: https://raw.githubusercontent.com/yen-chiu/blog-v1/master/img/about-HJ.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/santi/eto-icon.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
 RSS: false

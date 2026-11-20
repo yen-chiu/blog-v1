@@ -1,154 +1,38 @@
 ---
 layout: page
 title: "资料舱"
-description: "资料舱：三体语的观测记录与学习材料"
+description: "资料舱：三体交流研究的观测记录与学习材料"
 header-img: "img/santi/fast-dish.jpg"
 ---
 
-<!-- Language Selector -->
-<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
-</select> -->
+<div class="post-container">
 
-<!-- Chinese Version -->
-<div class="zh post-container">
+    <p>这里是档案站的公开资料入口。按用途分成三类：研究、手册、工具。仍在持续的补充中。</p>
 
-    <!--copied from markdown -->
-    <blockquote><p>
-    掘金知识，成为更好的自己<br>
-    如果你想要拥有你从未拥有过的东西，那就必须去做你从未做过的事情。</p></blockquote>
+    <h3>研究</h3>
 
-    <p>这里是我的博客的相关资料（持续更新中，请常来看看）。</p>
+    <ul>
+        <li><a href="{{ site.baseurl }}/research/">研究报告</a>　文献综述、三层框架与可检验预测</li>
+        <li><a href="{{ site.baseurl }}/2023/01/10/档案001-三体人的交流方式/">档案 001：三体人的交流方式</a>　研究纲领与四个未解问题</li>
+        <li><a href="{{ site.baseurl }}/2023/05/10/档案答疑-三体人需要语言吗/">档案答疑：三体人需要语言吗？</a></li>
+    </ul>
 
+    <h3>手册</h3>
 
-    <p></p>
-        
-<h3 id="toc_0">手册类</h3>
+    <ul>
+        <li><a href="{{ site.baseurl }}/2023/03/01/三体语概述/">三体语概述</a>　编码层的设计动机与结构</li>
+        <li><a href="{{ site.baseurl }}/2023/03/15/三体语简化版概述/">三体语简化版概述</a>　可以真正开始学的规则</li>
+    </ul>
 
-<ul>
-<li><a href="{{site.baseurl}}/2023/03/01/三体语概述">三体语概述</a></li>
-<li>三体语详解</li>
-</ul>
+    <h3>工具</h3>
 
-<h3 id="toc_1">教程类</h3>
+    <ul>
+        <li><a href="{{ site.baseurl }}/files/三体语-语音.pdf">十分钟掌握三体语字母和读音</a>（PDF）</li>
+        <li><a href="{{ site.baseurl }}/files/三体语词汇表_V0.6.pdf">三体语词汇表 V0.6</a>（PDF）</li>
+    </ul>
 
-<ul>
-    <li>十分钟掌握三体语字母和读音（<a href="{{site.baseurl}}/files/三体语-语音.pdf">中文</a>，English）</li>
-    <li>一小时掌握三体语单词结构和基础单词</li>
-    <li><a href="{{site.baseurl}}/files/论语英文版 Analects_of_Confucius.pdf">论语英文版(Analects_of_Confucius)</a></li>
-    <li><a href="{{site.baseurl}}/files/孙子兵法 the art of war.pdf">孙子兵法(the art of war)</a></li>
-</ul>
+    <hr>
 
-<h3 id="toc_2">词典类</h3>
+    <p><small>说明：资料仍在完善，内容日后可能微调；若不同文件之间存在不一致，以最新版本为准。</small></p>
 
-<ul>
-<li><a href="{{site.baseurl}}/files/三体语词汇表_V0.6.pdf">三体语词汇表 (V0.6)</a></li>
-</ul>
-
-<h3 id="toc_3">网站类</h3>
-
-<ul>
-<li>维基百科（中文）：<a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">首页</a></li>
-<li>宝藏资源导航：<a href="https://www.aboutppt.com/">ABOUT</a></li>
-</ul>
-
-<hr>
-
-<small> <font color="a0a9a9">
-<b>特别说明：</b>
-<li>因为资源还在完善中，您现在看到的内容将来可能还会有少量变化，敬请理解。</li>
-<li>若不同文件存在不一致的地方，请咨询作者。</li>
-</font>
-<small>
-        
 </div>
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
-
-
-<!-- Gitalk 评论 start  -->
-{% if site.gitalk.enable %}
-<!-- Gitalk link  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-    <script type="text/javascript">
-    var gitalk = new Gitalk({
-    clientID: '{{site.gitalk.clientID}}',
-    clientSecret: '{{site.gitalk.clientSecret}}',
-    repo: '{{site.gitalk.repo}}',
-    owner: '{{site.gitalk.owner}}',
-    admin: ['{{site.gitalk.admin}}'],
-    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-    id: 'resources',
-    });
-    gitalk.render('gitalk-container');
-</script>
-{% endif %}
-<!-- Gitalk end -->
-
- <!-- disqus 评论框 start  -->
-{% if site.disqus.enable %}
-
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus.username}}";
-    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
-

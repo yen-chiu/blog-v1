@@ -62,7 +62,7 @@ title:      标题
 subtitle:   副标题
 date:       2026-01-01
 author:     Wendell
-header-img: img/the-first.png
+header-img: img/santi/hero.jpg
 catalog:    false
 tags:
     - 标签
