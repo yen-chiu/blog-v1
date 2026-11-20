@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    ETO · 地球三体组织 主题层
    覆盖 Hux Blog 默认配色：深空底 + 星图 + 档案纸质感
    依赖：css/hux-blog.min.css 先加载，本文件后加载
@@ -15,6 +15,8 @@
     --eto-red: #d14b3f;
     --eto-olive: #93a05a;
     --eto-amber: #e0a44a;
+    --eto-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    --eto-serif: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "SimSun", Georgia, serif;
 }
 
 html {
@@ -654,4 +656,244 @@ body {
     border-top: 1px dashed #1b2733;
     color: #5f6d7b;
     font-size: 12px;
+}
+
+/* ===== 内部页：碎碎念 / 批注本 ===== */
+.notes-intro,
+.margins-intro {
+    font-family: var(--eto-mono);
+    font-size: 12.5px;
+    line-height: 1.9;
+    color: #6f7d8b;
+    border-left: 2px solid var(--eto-line);
+    padding-left: 14px;
+    margin: 0 0 34px;
+}
+
+.notes .memo {
+    display: grid;
+    grid-template-columns: 132px 1fr;
+    gap: 18px;
+    padding: 18px 0;
+    border-top: 1px solid var(--eto-line);
+}
+
+.notes .memo:first-of-type {
+    border-top: none;
+}
+
+.notes .memo time {
+    font-family: var(--eto-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    color: var(--eto-amber);
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+.notes .memo p {
+    margin: 0;
+    color: #b9c4cf;
+    font-size: 15.5px;
+    line-height: 1.95;
+}
+
+.notes .memo:hover p {
+    color: #d3dce4;
+}
+
+.margins .margin-entry {
+    margin: 0 0 30px;
+    padding: 18px 20px 16px;
+    background: rgba(10, 14, 19, 0.6);
+    border: 1px solid var(--eto-line);
+    border-left: 2px solid var(--eto-red);
+}
+
+.margins .margin-entry blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: var(--eto-serif);
+    font-size: 18px;
+    line-height: 1.75;
+    color: #dfe6ec;
+}
+
+.margins .margin-src {
+    margin: 8px 0 0;
+    font-family: var(--eto-mono);
+    font-size: 11.5px;
+    color: #6f7d8b;
+}
+
+.margins .margin-note {
+    display: block;
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: rgba(5, 7, 10, 0.7);
+    border: 1px dashed #24313d;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #a8b5c1;
+}
+
+.margins .mn-tag {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 1px 8px;
+    font-family: var(--eto-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    color: var(--eto-red);
+    border: 1px solid rgba(209, 75, 63, 0.45);
+    vertical-align: 1px;
+}
+
+.margins .margins-outro {
+    margin-top: 34px;
+    padding-top: 16px;
+    border-top: 1px dashed #24313d;
+    font-family: var(--eto-mono);
+    font-size: 12.5px;
+    line-height: 1.9;
+    color: #7d8a97;
+}
+
+.eto-corner-links {
+    margin: 18px 0 6px;
+    font-family: var(--eto-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.05em;
+    color: #4f5b67;
+}
+
+.eto-corner-links .eto-corner-label {
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.eto-corner-links a {
+    margin-right: 10px;
+    color: #6f7d8b;
+    text-decoration: none;
+    border-bottom: 1px dotted #2b3743;
+}
+
+.eto-corner-links a:hover {
+    color: var(--eto-red);
+    border-bottom-color: var(--eto-red);
+}
+
+@media (max-width: 767px) {
+    .notes .memo {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}
+
+/* ===== 人事档案 ===== */
+.dossier-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    padding: 10px 14px;
+    margin: 0 0 20px;
+    font-family: var(--eto-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    color: #7f8d9b;
+    border: 1px solid var(--eto-line);
+    background: rgba(10, 14, 19, 0.55);
+}
+
+.dossier-head .dossier-level {
+    color: var(--eto-red);
+}
+
+.dossier-note,
+.dossier-outro {
+    font-family: var(--eto-mono);
+    font-size: 12px;
+    line-height: 1.9;
+    color: #6f7d8b;
+}
+
+.dossier-note {
+    margin: 0 0 28px;
+    padding-left: 12px;
+    border-left: 2px solid var(--eto-line);
+}
+
+.dossier-outro {
+    margin-top: 30px;
+    padding-top: 14px;
+    border-top: 1px dashed #24313d;
+}
+
+.dossier-table {
+    width: 100%;
+    margin: 0 0 26px;
+    border-collapse: collapse;
+    font-size: 14.5px;
+}
+
+.dossier-table th,
+.dossier-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--eto-line-soft);
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.8;
+}
+
+.dossier-table th {
+    width: 132px;
+    font-family: var(--eto-mono);
+    font-size: 12px;
+    font-weight: normal;
+    color: #7f8d9b;
+    white-space: nowrap;
+}
+
+.dossier-table td {
+    color: #b9c4cf;
+}
+
+.redact {
+    display: inline-block;
+    padding: 0 4px;
+    background: #0c1117;
+    color: #0c1117;
+    border-bottom: 1px solid #2b3743;
+    letter-spacing: -0.05em;
+    user-select: none;
+}
+
+.dossier-flag {
+    display: inline-block;
+    padding: 0 6px;
+    font-family: var(--eto-mono);
+    font-size: 11px;
+    color: var(--eto-red);
+    border: 1px solid rgba(209, 75, 63, 0.45);
+}
+
+.dossier-list {
+    padding-left: 22px;
+    color: #b9c4cf;
+    font-size: 14.5px;
+    line-height: 1.95;
+}
+
+.dossier-list li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+    .dossier-table th {
+        width: 96px;
+        white-space: normal;
+    }
 }
