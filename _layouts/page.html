@@ -75,6 +75,8 @@ layout: default
                             postlist-container
                         ">
             {{ content }}
+
+            {% if page.comments %}{% include giscus.html %}{% endif %}
         </div>
         <!-- Sidebar Container -->
         <div class="
