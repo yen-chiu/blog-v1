@@ -578,3 +578,80 @@ body {
     letter-spacing: 0.08em;
 }
 
+
+/* ---------------- 研究报告页 ---------------- */
+
+.research {
+    font-family: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "SimSun", Georgia, serif;
+}
+
+.research h1 {
+    font-size: 27px;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+}
+
+.research .research-meta {
+    margin-bottom: 26px;
+    color: #6f7d8b;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+}
+
+.research-abstract {
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    background: #0b1016;
+    border: 1px solid var(--eto-line);
+    border-left: 2px solid rgba(209, 75, 63, 0.55);
+}
+
+.research-abstract p {
+    margin: 0 0 10px;
+    color: #a9b8c6;
+    font-size: 14.5px;
+    line-height: 1.95;
+}
+
+.research-abstract p:last-child {
+    margin-bottom: 0;
+}
+
+.research-abstract-en p {
+    color: #8f9dab;
+    font-size: 13.5px;
+}
+
+.research h2 {
+    margin-top: 42px;
+}
+
+.research h3 {
+    margin-top: 28px;
+    font-size: 17px;
+}
+
+.research blockquote p {
+    color: #9fb0bf;
+}
+
+.research .research-refs {
+    padding-left: 24px;
+    color: #9dabba;
+    font-size: 13.5px;
+    line-height: 1.85;
+}
+
+.research .research-refs li {
+    margin-bottom: 9px;
+}
+
+.research .research-note {
+    margin-top: 30px;
+    padding-top: 14px;
+    border-top: 1px dashed #1b2733;
+    color: #5f6d7b;
+    font-size: 12px;
+}
