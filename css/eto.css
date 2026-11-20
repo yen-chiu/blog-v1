@@ -478,3 +478,103 @@ body {
     backdrop-filter: blur(6px);
 }
 
+/* 品牌条：图标与站名并排，避免重叠 */
+.navbar-custom .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    line-height: 1;
+}
+
+.navbar-custom .navbar-brand .eto-brand-mark {
+    flex: 0 0 auto;
+    margin: 0;
+    vertical-align: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
+}
+
+/* ---------------- 档案摘录 ---------------- */
+
+.eto-quotes {
+    margin: 56px 0 40px;
+}
+
+.eto-quotes-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid var(--eto-line);
+}
+
+.eto-quotes-head h3 {
+    margin: 0;
+    color: var(--eto-red);
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.eto-quotes-head span {
+    color: #5f6d7b;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+}
+
+.eto-quote {
+    position: relative;
+    margin-bottom: 18px;
+    padding: 22px 26px 20px 30px;
+    background: linear-gradient(180deg, rgba(10, 14, 19, 0.92), rgba(7, 10, 14, 0.92));
+    border: 1px solid var(--eto-line);
+    box-shadow: inset 2px 0 0 rgba(209, 75, 63, 0.55);
+}
+
+.eto-quote p {
+    margin: 0 0 10px;
+    color: #d5e0ea;
+    font-size: 15.5px;
+    line-height: 1.95;
+    letter-spacing: 0.01em;
+}
+
+.eto-quote cite {
+    display: block;
+    color: #6f7d8b;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 11px;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.eto-quote .eto-quote-idx {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    color: #2a3945;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+}
+
+@media (max-width: 767px) {
+    .eto-quote {
+        padding: 18px 18px 16px 20px;
+    }
+}
+
+.eto-quotes-note {
+    margin: 22px 0 0;
+    color: #55636f;
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+}
+
