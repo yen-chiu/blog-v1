@@ -122,7 +122,7 @@ a:focus {
 }
 
 .intro-header .site-heading::before {
-    content: "// 地球三体组织 · ETO 观测档案";
+    content: "// 地球三体组织 · 三体交流研究档案";
     display: block;
     margin-bottom: 20px;
     font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;

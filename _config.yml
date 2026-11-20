@@ -1,9 +1,9 @@
 # Site settings
-title: 三体语档案
-SEOTitle: 三体语档案 · ETO
+title: 三体交流档案
+SEOTitle: 三体交流研究档案 · ETO
 header-img: img/santi/hero.jpg
 email:
-description: '三体语（Klovien）观测档案 · 地球三体组织 ETO'
+description: '三体人交流方式研究档案 · 地球三体组织 ETO'
 keyword: '三体语, Klovien, 国际语, ETO, 科幻'
 url: 'https://yenchiu.com' # your host, for absolute URL（站点实际由自定义域名 yenchiu.com/blog-v1/ 提供；baseurl 由 Pages 部署时注入）
 baseurl: '' # for example, '/blog' if your blog hosted on 'host/blog'
