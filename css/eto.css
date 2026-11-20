@@ -1,0 +1,480 @@
+/* ============================================================
+   ETO · 地球三体组织 主题层
+   覆盖 Hux Blog 默认配色：深空底 + 星图 + 档案纸质感
+   依赖：css/hux-blog.min.css 先加载，本文件后加载
+   ============================================================ */
+
+:root {
+    --eto-bg: #05070a;
+    --eto-panel: #0a0e13;
+    --eto-panel-2: #070a0e;
+    --eto-line: #1b2733;
+    --eto-line-soft: #141d26;
+    --eto-text: #c3cfda;
+    --eto-text-dim: #7f8d9b;
+    --eto-red: #d14b3f;
+    --eto-olive: #93a05a;
+    --eto-amber: #e0a44a;
+}
+
+html {
+    background: var(--eto-bg);
+    color-scheme: dark;
+}
+
+body {
+    background-color: var(--eto-bg);
+    background-image:
+        radial-gradient(1100px 560px at 50% -60px, rgba(209, 75, 63, 0.13), transparent 70%),
+        radial-gradient(900px 520px at 88% 100%, rgba(147, 160, 90, 0.06), transparent 70%),
+        url("../img/santi/eto-stars.svg");
+    background-attachment: fixed, fixed, fixed;
+    background-repeat: no-repeat, no-repeat, repeat;
+    color: var(--eto-text);
+}
+
+::selection {
+    background: rgba(209, 75, 63, 0.4);
+    color: #fff;
+}
+
+a {
+    color: var(--eto-red);
+}
+
+a:hover,
+a:focus {
+    color: #e8695c;
+    text-decoration: none;
+}
+
+/* ---------------- 导航 ---------------- */
+
+.navbar-custom {
+    background: rgba(4, 6, 9, 0.94);
+    border-bottom: 1px solid var(--eto-line);
+    box-shadow: 0 1px 0 rgba(209, 75, 63, 0.16);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #eef2f6;
+    font-size: 13px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.navbar-custom .nav li a {
+    color: #a7b3c0;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+    color: var(--eto-red);
+    background: transparent;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: var(--eto-red);
+}
+
+.eto-brand-mark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: -4px;
+    opacity: 0.95;
+}
+
+/* ---------------- 头图 ---------------- */
+
+.intro-header {
+    border-bottom: 1px solid var(--eto-line);
+    box-shadow:
+        inset 0 0 0 2000px rgba(3, 5, 8, 0.58),
+        inset 0 -140px 120px -70px var(--eto-bg);
+}
+
+.intro-header .site-heading,
+.intro-header .post-heading {
+    color: #e9eef4;
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.85);
+}
+
+.intro-header .site-heading h1,
+.intro-header .post-heading h1 {
+    color: #f2f6fa;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+}
+
+.intro-header .site-heading .subheading,
+.intro-header .post-heading .subheading {
+    color: #93a2b1 !important;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 1.9;
+}
+
+.intro-header .site-heading::before {
+    content: "// ETO ARCHIVE · 三体语档案";
+    display: block;
+    margin-bottom: 20px;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    color: var(--eto-red);
+    text-transform: uppercase;
+}
+
+/* ---------------- 文章列表 ---------------- */
+
+.post-preview > a > .post-title {
+    color: #e9eef4;
+    letter-spacing: 0.02em;
+    transition: color 0.15s ease;
+}
+
+.post-preview > a:hover > .post-title {
+    color: var(--eto-red);
+}
+
+.post-preview > a > .post-subtitle {
+    color: #9dabba;
+    font-weight: 400;
+}
+
+.post-preview > .post-meta,
+.post-meta {
+    color: #6d7b89 !important;
+    letter-spacing: 0.06em;
+    font-size: 12px;
+}
+
+.post-preview {
+    border-bottom: 1px solid var(--eto-line-soft);
+    padding-bottom: 26px;
+}
+
+/* ---------------- 文章正文 ---------------- */
+
+.post-container {
+    background: var(--eto-panel);
+    border: 1px solid var(--eto-line);
+    box-shadow:
+        0 0 0 1px rgba(209, 75, 63, 0.06),
+        0 24px 70px rgba(0, 0, 0, 0.55);
+}
+
+.post-content {
+    color: #b8c5d1;
+    font-size: 16.5px;
+    line-height: 1.85;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: #edf3f9;
+    letter-spacing: 0.02em;
+}
+
+.post-content h2 {
+    border-left: 3px solid var(--eto-red);
+    padding-left: 14px;
+}
+
+.post-content a {
+    color: #e26054;
+    border-bottom: 1px dotted rgba(209, 75, 63, 0.55);
+}
+
+.post-content a:hover {
+    border-bottom-style: solid;
+    background: rgba(209, 75, 63, 0.08);
+}
+
+.post-content blockquote {
+    background: #0b1016;
+    border-left: 3px solid var(--eto-red);
+    color: #9fb0bf;
+    font-style: normal;
+}
+
+.post-content blockquote p {
+    color: #9fb0bf;
+}
+
+.post-content code,
+.post-content tt {
+    background: #0d141c;
+    border: 1px solid #182430;
+    color: var(--eto-amber);
+}
+
+.post-content pre {
+    background: #070c11;
+    border: 1px solid #16212c;
+    color: #c6d4e0;
+}
+
+.post-content pre code {
+    border: 0;
+    background: transparent;
+}
+
+.post-content hr {
+    border-top: 1px solid var(--eto-line);
+}
+
+.post-content table th,
+.post-content table td {
+    border-color: #1d2936 !important;
+    color: #b8c5d1;
+}
+
+.post-content table th {
+    background: #0c1219;
+    color: #e6edf4;
+}
+
+.post-content ul,
+.post-content ol {
+    color: #b8c5d1;
+}
+
+/* 配图卡片 */
+.post-content figure {
+    margin: 34px 0;
+}
+
+.post-content figure img {
+    border: 1px solid #22303d;
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.6),
+        0 18px 50px rgba(0, 0, 0, 0.55);
+    background: #0a0e13;
+}
+
+.post-content figure figcaption {
+    margin-top: 12px;
+    color: #778594;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+/* 正文内图片统一压暗边框 */
+.post-content img {
+    max-width: 100%;
+}
+
+/* ---------------- 侧栏 ---------------- */
+
+.sidebar-container {
+    color: #7f8d9b;
+}
+
+.sidebar-container h5,
+.sidebar-container h5 a {
+    color: #5f6d7b !important;
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.sidebar-container .tags a {
+    border: 1px solid #1b2733;
+    color: #8b99a7;
+    background: rgba(10, 14, 19, 0.6);
+}
+
+.sidebar-container .tags a:hover {
+    border-color: rgba(209, 75, 63, 0.6);
+    color: var(--eto-red);
+}
+
+.sidebar-container .short-about img {
+    border: 1px solid #22303d;
+    filter: grayscale(0.35) contrast(1.05) brightness(0.92);
+}
+
+.sidebar-container hr {
+    border-top: 1px solid var(--eto-line-soft);
+}
+
+/* ---------------- 翻页 ---------------- */
+
+.pager li > a,
+.pager li > span {
+    background: #0b1117;
+    border: 1px solid var(--eto-line);
+    color: #c3cfda;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+    background: #101820;
+    border-color: rgba(209, 75, 63, 0.7);
+    color: var(--eto-red);
+}
+
+/* ---------------- 页脚 ---------------- */
+
+footer {
+    margin-top: 30px;
+    padding: 44px 0 30px;
+    background: rgba(3, 5, 8, 0.9);
+    border-top: 1px solid var(--eto-line);
+}
+
+footer .copyright {
+    color: #66737f !important;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+}
+
+footer .copyright a {
+    color: #93a2b1;
+    border-bottom: 1px dotted #33414e;
+}
+
+footer .copyright a:hover {
+    color: var(--eto-red);
+    border-color: rgba(209, 75, 63, 0.6);
+}
+
+footer .fa-stack {
+    font-size: 13px;
+    color: #7f8d9b;
+}
+
+footer .fa-stack .fa-circle {
+    color: #10181f;
+}
+
+footer .fa-stack:hover .fa-circle {
+    color: #1b2733;
+}
+
+.eto-footer-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 24px;
+    color: #6f7d8b;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.eto-footer-line img {
+    width: 26px;
+    height: 26px;
+    opacity: 0.85;
+}
+
+.eto-footer-line .eto-motto {
+    color: #8d9aa8;
+    letter-spacing: 0.12em;
+}
+
+.eto-footer-line .eto-status {
+    color: var(--eto-olive);
+}
+
+.eto-footer-line .eto-status::before {
+    content: "● ";
+    animation: eto-blink 2.4s steps(2, start) infinite;
+}
+
+@keyframes eto-blink {
+    to { opacity: 0.25; }
+}
+
+/* ---------------- 其他页面（标签云 / 关于 / 404） ---------------- */
+
+.intro-header .post-heading .meta,
+.intro-header .post-heading .meta a {
+    color: #8593a1 !important;
+}
+
+.tag_cloud a,
+#tag_cloud a {
+    color: #93a05a;
+}
+
+.tag_cloud a:hover,
+#tag_cloud a:hover {
+    color: var(--eto-red);
+}
+
+.list-inline > li {
+    color: #7f8d9b;
+}
+
+body.post-template .post-content,
+body.page-template .post-content {
+    color: #b8c5d1;
+}
+
+/* 小屏去掉星空固定，避免移动端性能问题 */
+@media (max-width: 767px) {
+    body {
+        background-attachment: scroll, scroll, scroll;
+    }
+}
+
+/* ---------------- 官方档案框 ---------------- */
+
+.intro-header {
+    position: relative;
+}
+
+.intro-header::after {
+    content: "";
+    position: absolute;
+    inset: 16px;
+    border: 1px solid rgba(232, 238, 245, 0.12);
+    pointer-events: none;
+    background-image:
+        linear-gradient(var(--eto-red), var(--eto-red)),
+        linear-gradient(var(--eto-red), var(--eto-red)),
+        linear-gradient(var(--eto-red), var(--eto-red)),
+        linear-gradient(var(--eto-red), var(--eto-red));
+    background-repeat: no-repeat;
+    background-size: 10px 1px, 1px 10px, 10px 1px, 1px 10px;
+    background-position: left top, left top, right bottom, right bottom;
+}
+
+body {
+    background-color: #000;
+}
+
+.eto-brand-mark {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: -6px;
+    opacity: 0.92;
+}
+
+.navbar-custom {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
