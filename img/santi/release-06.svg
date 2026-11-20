@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="三体语 v0.6 发布卡片">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060910"/>
+      <stop offset="1" stop-color="#0c1626"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#b)"/>
+  <g stroke="#1b3550" stroke-opacity="0.5">
+    <line x1="0" y1="130" x2="1200" y2="130"/>
+    <line x1="0" y1="390" x2="1200" y2="390"/>
+  </g>
+
+  <g font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="72" y="96" fill="#6fb3c9" font-size="18" letter-spacing="10">KLOVIEN INTERLINGUA</text>
+    <text x="72" y="330" fill="#f2f6fa" font-size="150" font-weight="800" letter-spacing="4">v0.6</text>
+    <text x="470" y="300" fill="#d8a24a" font-size="40" letter-spacing="6">首个公开版本</text>
+    <text x="470" y="352" fill="#7f93a6" font-size="20" letter-spacing="2">免费开放 · 未定稿 · 随时可被推翻</text>
+
+    <g font-size="16" fill="#8aa0b4" letter-spacing="3">
+      <text x="72" y="450">37 个音素</text>
+      <text x="300" y="450">2000 基本词</text>
+      <text x="560" y="450">100 辅助词</text>
+      <text x="820" y="450">11 介词</text>
+    </g>
+    <g fill="#d8a24a" font-size="12" letter-spacing="2" font-family="ui-monospace,Consolas,monospace">
+      <text x="72" y="478">PHONEMES</text>
+      <text x="300" y="478">ROOTS</text>
+      <text x="560" y="478">FUNCTION WORDS</text>
+      <text x="820" y="478">PREPOSITIONS</text>
+    </g>
+
+    <!-- three stars -->
+    <g transform="translate(1010,90)">
+      <circle cx="0" cy="0" r="5" fill="#e9eef4"/>
+      <circle cx="34" cy="26" r="3.4" fill="#a9bccd"/>
+      <circle cx="-26" cy="34" r="2.6" fill="#7f93a6"/>
+      <path d="M0 0 L34 26 M0 0 L-26 34 M34 26 L-26 34" stroke="#3b5c78" stroke-width="0.8"/>
+    </g>
+  </g>
+</svg>

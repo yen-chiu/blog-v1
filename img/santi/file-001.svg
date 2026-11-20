@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="红岸档案001：不要回答">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070c"/>
+      <stop offset="0.55" stop-color="#0a1220"/>
+      <stop offset="1" stop-color="#070a12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.22" r="0.6">
+      <stop offset="0" stop-color="#1d3b52" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#16324a" stroke-opacity="0.35" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="520" fill="url(#bg)"/>
+  <rect width="1200" height="520" fill="url(#grid)"/>
+  <rect width="1200" height="520" fill="url(#glow)"/>
+
+  <g font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="70" y="86" fill="#d8a24a" font-size="20" letter-spacing="8">RED COAST ARCHIVE</text>
+    <text x="70" y="118" fill="#6b8298" font-size="15" letter-spacing="4">红岸基地 · 档案 001 · 绝密</text>
+
+    <line x1="70" y1="146" x2="1130" y2="146" stroke="#d8a24a" stroke-opacity="0.55" stroke-width="1"/>
+
+    <text x="70" y="272" fill="#e9eef4" font-size="104" font-weight="700" letter-spacing="16">不要回答</text>
+    <text x="70" y="330" fill="#7f93a6" font-size="24" letter-spacing="6">DO NOT REPLY · DO NOT REPLY · DO NOT REPLY</text>
+
+    <!-- signal waveform -->
+    <g transform="translate(70,392)" stroke="#6fb3c9" stroke-opacity="0.85" stroke-width="2" fill="none">
+      <path d="M0 34 L40 34 L52 6 L66 62 L80 18 L96 48 L112 34 L180 34 L196 34 L208 10 L222 58 L238 22 L252 46 L268 34 L340 34 L352 34 L364 12 L378 56 L394 24 L410 44 L426 34 L500 34 L516 34 L528 8 L542 60 L558 20 L572 48 L588 34 L660 34 L674 34 L686 14 L700 54 L716 26 L732 42 L748 34 L820 34 L836 34 L848 10 L862 58 L878 22 L892 46 L908 34 L980 34 L996 34 L1008 12 L1022 56 L1038 24 L1054 44 L1070 34"/>
+    </g>
+    <g font-size="13" fill="#5d7387" font-family="ui-monospace,Consolas,monospace">
+      <text x="70" y="470">SNR 38.6 dB</text>
+      <text x="330" y="470">CH 21CM</text>
+      <text x="560" y="470">SRC 4.22 ly</text>
+      <text x="880" y="470">STATUS: SEALED</text>
+    </g>
+
+    <g transform="translate(960,60)">
+      <circle r="58" fill="none" stroke="#d8a24a" stroke-opacity="0.6" stroke-width="2"/>
+      <text x="0" y="-4" text-anchor="middle" fill="#d8a24a" font-size="46" font-weight="700">三</text>
+      <text x="0" y="34" text-anchor="middle" fill="#d8a24a" font-size="14" letter-spacing="4">BODY</text>
+    </g>
+  </g>
+</svg>

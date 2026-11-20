@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="词汇遗忘曲线">
+  <rect width="1200" height="520" fill="#f7f4ee"/>
+
+  <g font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="70" y="62" fill="#1d2733" font-size="26" font-weight="700" letter-spacing="2">词汇遗忘曲线</text>
+    <text x="70" y="94" fill="#6b7684" font-size="15" letter-spacing="1">横轴：距最后一次复习的天数　纵轴：仍能想起的比例</text>
+
+    <!-- bands -->
+    <rect x="120" y="120" width="288" height="300" fill="#e7eef3"/>
+    <rect x="408" y="120" width="672" height="300" fill="#f1ece3"/>
+    <text x="130" y="140" fill="#5a6b7a" font-size="13" letter-spacing="2">背诵期 0–90 天</text>
+    <text x="418" y="140" fill="#7a6a55" font-size="13" letter-spacing="2">空窗期 90–300 天</text>
+
+    <!-- axes -->
+    <g stroke="#c9c3b8" stroke-width="1">
+      <line x1="120" y1="420" x2="1080" y2="420"/>
+      <line x1="120" y1="120" x2="120" y2="420"/>
+    </g>
+    <g stroke="#ddd8cf" stroke-width="0.8" stroke-dasharray="4 4">
+      <line x1="120" y1="321" x2="1080" y2="321"/>
+      <line x1="120" y1="222" x2="1080" y2="222"/>
+      <line x1="120" y1="156" x2="1080" y2="156"/>
+    </g>
+    <g fill="#8a94a0" font-size="12" font-family="ui-monospace,Consolas,monospace">
+      <text x="86" y="425">0%</text>
+      <text x="86" y="326">30%</text>
+      <text x="86" y="227">60%</text>
+      <text x="86" y="161">90%</text>
+      <text x="120" y="446">0</text>
+      <text x="312" y="446">60</text>
+      <text x="504" y="446">120</text>
+      <text x="696" y="446">180</text>
+      <text x="888" y="446">240</text>
+      <text x="1064" y="446">300 天</text>
+    </g>
+
+    <!-- curve -->
+    <polyline points="120,90 216,168.9 312,228.6 408,274.1 504,309.1 600,335.5 696,355.7 792,371.2 888,382.7 984,391.6 1080,398.6"
+              fill="none" stroke="#b5482f" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- markers -->
+    <circle cx="408" cy="274.1" r="7" fill="#b5482f"/>
+    <circle cx="984" cy="391.6" r="7" fill="#b5482f"/>
+    <line x1="408" y1="274.1" x2="408" y2="200" stroke="#b5482f" stroke-width="1" stroke-dasharray="4 3"/>
+    <line x1="984" y1="391.6" x2="984" y2="330" stroke="#b5482f" stroke-width="1" stroke-dasharray="4 3"/>
+
+    <text x="330" y="186" fill="#b5482f" font-size="18" font-weight="700">第 90 天：600 词，巅峰</text>
+    <text x="820" y="316" fill="#b5482f" font-size="18" font-weight="700">第 270 天：不足 100 词</text>
+    <text x="120" y="492" fill="#6b7684" font-size="13" letter-spacing="1">曲线参数仅为示意：R = e^(−t/110)。真实遗忘比这更快，也更不讲道理。</text>
+  </g>
+</svg>

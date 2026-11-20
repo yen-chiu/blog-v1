@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="符号在想象中成形">
+  <defs>
+    <radialGradient id="sky" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0" stop-color="#0d1a2a"/>
+      <stop offset="1" stop-color="#04060a"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="1200" height="520" fill="url(#sky)"/>
+
+  <g stroke="#2b4a66" stroke-width="0.9" stroke-opacity="0.7" fill="none">
+    <path d="M300 210 L470 150 L620 240 L560 370 L390 350 Z"/>
+    <path d="M620 240 L760 170 L860 260 L790 360 L560 370"/>
+    <path d="M470 150 L620 90 L760 170"/>
+  </g>
+
+  <g font-family="'Songti SC','Noto Serif SC','SimSun',serif" text-anchor="middle">
+    <g transform="translate(300,210)">
+      <circle r="46" fill="#0a1522" stroke="#6fb3c9" stroke-opacity="0.8"/>
+      <text y="16" fill="#e9eef4" font-size="42">月</text>
+    </g>
+    <g transform="translate(470,150)">
+      <circle r="38" fill="#0a1522" stroke="#6fb3c9" stroke-opacity="0.75"/>
+      <text y="14" fill="#e9eef4" font-size="34">光</text>
+    </g>
+    <g transform="translate(620,240)">
+      <circle r="54" fill="#0a1522" stroke="#d8a24a" stroke-opacity="0.9"/>
+      <text y="18" fill="#f6efe2" font-size="48">心</text>
+    </g>
+    <g transform="translate(560,370)">
+      <circle r="34" fill="#0a1522" stroke="#6fb3c9" stroke-opacity="0.7"/>
+      <text y="12" fill="#dfe7ee" font-size="30">树</text>
+    </g>
+    <g transform="translate(390,350)">
+      <circle r="30" fill="#0a1522" stroke="#6fb3c9" stroke-opacity="0.65"/>
+      <text y="10" fill="#dfe7ee" font-size="26">影</text>
+    </g>
+    <g transform="translate(760,170)">
+      <circle r="40" fill="#0a1522" stroke="#6fb3c9" stroke-opacity="0.7"/>
+      <text y="14" fill="#e9eef4" font-size="36">爱</text>
+    </g>
+    <g transform="translate(860,260)">
+      <circle r="26" fill="#0a1522" stroke="#3f5f7c" stroke-opacity="0.7"/>
+      <text y="9" fill="#b9c7d3" font-size="22">你</text>
+    </g>
+    <g transform="translate(790,360)">
+      <circle r="22" fill="#0a1522" stroke="#3f5f7c" stroke-opacity="0.6"/>
+      <text y="8" fill="#b9c7d3" font-size="19">我</text>
+    </g>
+    <g transform="translate(620,90)">
+      <circle r="18" fill="#0a1522" stroke="#3f5f7c" stroke-opacity="0.6"/>
+      <text y="7" fill="#b9c7d3" font-size="16">？</text>
+    </g>
+  </g>
+
+  <g font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="70" y="470" fill="#7f93a6" font-size="16" letter-spacing="4">符号不落在纸上，它们在想象中成形，浮在空中，由使用者自行组合。</text>
+    <text x="70" y="500" fill="#4d6377" font-size="12" letter-spacing="3">图：概念节点在一次典型的三体语表达中的临时结构 —— 每次说话，都是一次重新接线。</text>
+  </g>
+</svg>

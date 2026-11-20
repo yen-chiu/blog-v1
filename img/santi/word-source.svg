@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="三体语词源覆盖目标">
+  <rect width="1200" height="520" fill="#f7f4ee"/>
+
+  <g font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="70" y="66" fill="#1d2733" font-size="28" font-weight="700" letter-spacing="2">一个词，三种母语的线索</text>
+    <text x="70" y="100" fill="#6b7684" font-size="15" letter-spacing="1">基本词的词源覆盖设计目标 —— 让 35 亿人在自己的母语里认出它</text>
+
+    <!-- bars -->
+    <g font-size="16" fill="#4a5563">
+      <text x="70" y="176">中文（词韵）</text>
+      <text x="70" y="256">英语（词基）</text>
+      <text x="70" y="336">法语（词基）</text>
+    </g>
+
+    <rect x="240" y="152" width="792" height="32" rx="4" fill="#e9e3d8"/>
+    <rect x="240" y="152" width="784" height="32" rx="4" fill="#b5482f"/>
+    <text x="1044" y="176" fill="#b5482f" font-size="22" font-weight="700">99%</text>
+
+    <rect x="240" y="232" width="792" height="32" rx="4" fill="#e9e3d8"/>
+    <rect x="240" y="232" width="634" height="32" rx="4" fill="#2f6f7e"/>
+    <text x="1044" y="256" fill="#2f6f7e" font-size="22" font-weight="700">80%</text>
+
+    <rect x="240" y="312" width="792" height="32" rx="4" fill="#e9e3d8"/>
+    <rect x="240" y="312" width="554" height="32" rx="4" fill="#8a6a33"/>
+    <text x="1044" y="336" fill="#8a6a33" font-size="22" font-weight="700">70%</text>
+
+    <!-- example -->
+    <g transform="translate(70,392)">
+      <rect width="1060" height="96" rx="6" fill="#ffffff" stroke="#ddd8cf"/>
+      <text x="28" y="38" fill="#1d2733" font-size="26" font-weight="700" letter-spacing="2">lunue</text>
+      <text x="140" y="38" fill="#6b7684" font-size="16">月亮</text>
+      <text x="28" y="72" fill="#7a6a55" font-size="14" letter-spacing="1">lun- 来自英语/法语 lune，-ue 来自中文“月”的韵母 —— 两边的人都能猜中。</text>
+    </g>
+
+    <text x="70" y="514" fill="#6b7684" font-size="13" letter-spacing="1">覆盖率的算法见正文引言；数字为目标值，不是统计结果。</text>
+  </g>
+</svg>
