@@ -26,6 +26,8 @@ layout: default
         <!-- PostList Container -->
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
             {{ content }}
+
+        {% if page.comments %}{% include giscus.html %}{% endif %}
         </div>
         <!-- Sidebar Container -->
         <div class="

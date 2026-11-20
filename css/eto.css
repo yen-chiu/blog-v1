@@ -1224,3 +1224,30 @@ body {
         gap: 2px;
     }
 }
+
+/* ===== 留言区 ===== */
+.eto-comments {
+    margin: 46px 0 10px;
+    padding-top: 22px;
+    border-top: 1px solid var(--eto-line);
+}
+
+.eto-comments-title {
+    font-family: var(--eto-mono);
+    font-size: 12px;
+    letter-spacing: .28em;
+    color: var(--eto-red);
+    margin: 0 0 6px;
+}
+
+.eto-comments-note {
+    font-size: 12.5px;
+    color: #7d7a6f;
+    margin: 0 0 18px;
+}
+
+.eto-comments .giscus,
+.eto-comments iframe {
+    width: 100%;
+    color-scheme: dark;
+}
