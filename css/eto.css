@@ -1048,3 +1048,50 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== 故事 ===== */
+.stories-intro {
+    margin: 0 0 30px;
+    padding-left: 14px;
+    border-left: 2px solid var(--eto-line);
+    font-size: 14px;
+    line-height: 1.95;
+    color: #8fa0ae;
+}
+
+.stories .story {
+    padding: 28px 0;
+    border-top: 1px solid var(--eto-line);
+}
+
+.stories .story:first-of-type {
+    border-top: none;
+}
+
+.stories .story-meta {
+    margin: 0 0 8px;
+    font-family: var(--eto-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    color: #5f6d7b;
+}
+
+.stories .story h2 {
+    margin: 0 0 16px;
+    font-family: var(--eto-serif);
+    font-size: 21px;
+    color: #e2e9ef;
+    border: none;
+    padding: 0;
+}
+
+.stories .story p {
+    margin: 0 0 13px;
+    font-size: 15px;
+    line-height: 2;
+    color: #b0bcc7;
+}
+
+.stories .story p:last-child {
+    margin-bottom: 0;
+}
