@@ -655,3 +655,24 @@ body {
     color: #5f6d7b;
     font-size: 12px;
 }
+
+/* ---------------- 同行评审页 ---------------- */
+
+.review h3 {
+    color: #c8d3dc;
+    letter-spacing: 0.01em;
+}
+
+.review table {
+    font-size: 13px;
+}
+
+.review table th,
+.review table td {
+    padding: 8px 10px;
+}
+
+.review ul li,
+.review ol li {
+    margin-bottom: 8px;
+}
